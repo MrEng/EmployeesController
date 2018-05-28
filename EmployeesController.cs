@@ -14,6 +14,7 @@ namespace EmployeeService.Controllers
         {
             using(EmployeeDBEntities entities = new EmployeeDBEntities())
             {
+            // what should happen if there are a lot of users that you can't return them all at the same time
                 return entities.Employees.ToList();
             }
         }
